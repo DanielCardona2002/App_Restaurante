@@ -7,4 +7,9 @@
     <string name="contrase_a">Contraseña</string>
     <string name="ingresar">Ingresar</string>
     <string name="no_estoy_registrado">No estoy registrado</string>
+    <string name="title_activity_register">Registro</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="repetir_contase_a">Repetir Contaseña</string>
+    <string name="continuar">Continuar</string>
 </resources>

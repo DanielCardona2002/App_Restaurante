@@ -68,6 +68,6 @@
         android:text="@string/no_estoy_registrado"
         android:gravity="center"
         android:textSize="20sp"
-        android:onClick="Registro"/>
+        android:onClick="Registro1"/>
 
 </LinearLayout>

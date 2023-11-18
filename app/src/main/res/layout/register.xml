@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registro"
+        android:text="@string/title_activity_register"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="40sp"/>
@@ -21,7 +21,7 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Nombres"
+        android:hint="@string/nombres"
         android:gravity="center"
         android:textSize="20sp"
         android:autofillHints="Nombre"
@@ -35,7 +35,7 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Apellidos"
+        android:hint="@string/apellidos"
         android:gravity="center"
         android:textSize="20sp"
         android:autofillHints="Apellido"
@@ -49,11 +49,54 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Usuario"
+        android:hint="@string/usuario"
         android:gravity="center"
         android:textSize="20sp"
-        android:autofillHints="usuaio"
+        android:autofillHints="usuario"
         android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/contrase_a"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:autofillHints="Contraseña"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/repetir_contase_a"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:autofillHints="Contraseña"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/continuar"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="Registro2"/>
+
+
 
 
 </LinearLayout>

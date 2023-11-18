@@ -11,12 +11,11 @@ public class Login extends ComponentActivity {
 
     }
 
-    public View Loggeo(){
-        return null;
+    public void Loggeo(View view) {
     }
 
-    public View Registro(){
-        return null;
+    public void Registro1(View view) {
     }
+
 
 }
