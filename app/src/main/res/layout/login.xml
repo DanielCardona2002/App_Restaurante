@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+   <Space
+       android:layout_width="match_parent"
+       android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurantapp"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/usuario"
+        android:inputType="text"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:autofillHints="Usuario"/>
+
+ <Space
+     android:layout_width="match_parent"
+     android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:autofillHints="Contraseña" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar"
+        android:layout_gravity="center"
+        android:onClick="Loggeo"/>
+
+    <Space
+     android:layout_width="match_parent"
+     android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/no_estoy_registrado"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="Registro"/>
+
+</LinearLayout>
