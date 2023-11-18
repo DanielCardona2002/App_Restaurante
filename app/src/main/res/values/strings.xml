@@ -12,4 +12,10 @@
     <string name="apellidos">Apellidos</string>
     <string name="repetir_contase_a">Repetir Contaseña</string>
     <string name="continuar">Continuar</string>
+    <string name="gestionar_empleados">Gestionar Empleados</string>
+    <string name="gestionar_inventario">Gestionar Inventario</string>
+    <string name="gestionar_mesas">Gestionar Mesas</string>
+    <string name="gestionar_el_menu">Gestionar el Menu</string>
+    <string name="gestionar_reservacion">Gestionar reservacion</string>
+    <string name="gestionar_pedidos">Gestionar Pedidos</string>
 </resources>
