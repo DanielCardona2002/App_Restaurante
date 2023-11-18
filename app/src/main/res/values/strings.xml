@@ -18,4 +18,5 @@
     <string name="gestionar_el_menu">Gestionar el Menu</string>
     <string name="gestionar_reservacion">Gestionar reservacion</string>
     <string name="gestionar_pedidos">Gestionar Pedidos</string>
+    <string name="title_activity_home">Menú</string>
 </resources>

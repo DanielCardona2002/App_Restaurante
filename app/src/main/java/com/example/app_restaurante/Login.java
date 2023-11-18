@@ -1,4 +1,5 @@
 package com.example.app_restaurante;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.activity.ComponentActivity;
@@ -12,9 +13,11 @@ public class Login extends ComponentActivity {
     }
 
     public void Loggeo(View view) {
+        startActivity(new Intent(this, Home.class));
     }
 
     public void Registro1(View view) {
+        startActivity(new Intent(this, Register.class));
     }
 
 

@@ -1,5 +1,6 @@
 package com.example.app_restaurante;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,5 +15,6 @@ public class Register extends ComponentActivity {
     }
 
     public void Registro2(View view) {
+        startActivity(new Intent(this, Home.class));
     }
 }
