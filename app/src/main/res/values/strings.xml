@@ -24,4 +24,8 @@
     <string name="recuperar">Recuperar</string>
     <string name="Olvide">Olvidé mi clave</string>
     <string name="title_activity_forgot">Recuperar Cuenta</string>
+    <string name="title_activity_Empleado">Gestión de Empleados</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="no_funcion">No Funcionó</string>
 </resources>

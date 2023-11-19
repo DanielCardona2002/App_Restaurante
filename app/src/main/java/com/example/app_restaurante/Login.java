@@ -57,7 +57,10 @@ public class Login extends ComponentActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            startActivity(new Intent(Login.this, Home.class));
+                            Toast.makeText(Login.this, "HID "+auth.getUid(), Toast.LENGTH_LONG).show();
+                            Intent in = new Intent(Login.this, Home.class);
+                            in.putExtra("UserID",auth.getUid());
+                            startActivity(in);
                             finish();
                         }else Toast.makeText(Login.this, "Hubo unn  problema", Toast.LENGTH_LONG).show();
                     }
