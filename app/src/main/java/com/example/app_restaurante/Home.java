@@ -12,8 +12,10 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,23 +38,22 @@ public class Home extends ComponentActivity {
 
         Logged = this.findViewById(R.id.UsuarioLogged);
 
-        if(bundle.getString("UserID") != null){
+        if (bundle != null && bundle.getString("UserID") != null) {
             UserID = bundle.getString("UserID");
-            databaseReference.child("Usuarios").child(UserID).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            databaseReference.child("Usuarios").child(UserID).addValueEventListener(new ValueEventListener() {
                 @Override
-                public void onComplete(@NonNull Task<DataSnapshot> task) {
-                   if (task.isSuccessful()){
-                       Object registro =  null;
-                       registro = task.getResult().getValue();
-                       String Name =null;
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if (snapshot.exists()){
+                        String nombre = snapshot.child("Nombre").getValue().toString();
+                        String apellido = snapshot.child("Apellidos").getValue().toString();
 
-                     /*   for(DataSnapshot child: task.getResult().getChildren()){
-                            Name = Name + " " + child.get;
-                        } */
+                        Logged.setText(nombre+" "+apellido);
+                    }
+                }
 
-                       Logged.setText(Name);
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-                   }
                 }
             });
 
