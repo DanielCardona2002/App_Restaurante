@@ -37,9 +37,14 @@ public class Login extends ComponentActivity {
     public void Loggeo(View view) {
         LoginUser();
     }
-
     public void Registro1(View view) {
         startActivity(new Intent(this, Register.class));
+        finish();
+    }
+
+    public void Olvido(View view){
+        startActivity(new Intent(Login.this, Forgot.class));
+        finish();
     }
 
     private void LoginUser(){

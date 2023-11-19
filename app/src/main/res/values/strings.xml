@@ -20,4 +20,8 @@
     <string name="gestionar_pedidos">Gestionar Pedidos</string>
     <string name="title_activity_home">Menú</string>
     <string name="Correo">Correo Electrónico</string>
+    <string name="recuperar_cuenta">Recuperar Cuenta</string>
+    <string name="recuperar">Recuperar</string>
+    <string name="Olvide">Olvidé mi clave</string>
+    <string name="title_activity_forgot">Recuperar Cuenta</string>
 </resources>
