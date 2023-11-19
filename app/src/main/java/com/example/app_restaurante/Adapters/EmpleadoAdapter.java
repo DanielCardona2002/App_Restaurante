@@ -3,6 +3,7 @@ package com.example.app_restaurante.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,8 @@ import com.example.app_restaurante.Models.Empleado;
 import com.example.app_restaurante.R;
 
 import java.util.ArrayList;
+
+import kotlin.Unit;
 
 public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHolder> {
 
@@ -36,6 +39,7 @@ public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHo
         Empleado empleado = EmpleadoList.get(position);
 
         holder.textViewNombreEmpleado.setText(String.format("%s %s", empleado.getNombre(), empleado.getApellidos()));
+
     }
 
     @Override
@@ -46,6 +50,8 @@ public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView textViewNombreEmpleado;
+        private Button btnEditarEmpleado;
+        private Button btnEliminarEmpleado;
 
         public View view;
 
@@ -54,6 +60,8 @@ public class EmpleadoAdapter extends RecyclerView.Adapter<EmpleadoAdapter.ViewHo
 
             this.view =  view;
             this.textViewNombreEmpleado =  view.findViewById(R.id.Nombre_Empleado_TextView);
+            this.btnEditarEmpleado = view.findViewById(R.id.btnEditar_Empleado_view);
+            this.btnEliminarEmpleado = view.findViewById(R.id.btnEliminar_Empleado_View);
         }
     }
 }

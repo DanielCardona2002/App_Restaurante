@@ -54,7 +54,7 @@ public class Gestion_Empleados extends ComponentActivity {
                     for (DataSnapshot ds: snapshot.getChildren()){
                         String nombre = ds.child("Nombre").getValue().toString();
                         String apellido  = ds.child("Apellidos").getValue().toString();
-                        empleadosList.add(new Empleado(nombre, apellido));
+                        empleadosList.add(new Empleado(ds.getKey().toString(), nombre, apellido));
                     }
                     empleadoAdapter = new EmpleadoAdapter(empleadosList, R.layout.empleado_view);
                     mRecyclerView.setAdapter(empleadoAdapter);
@@ -66,5 +66,9 @@ public class Gestion_Empleados extends ComponentActivity {
 
             }
         });
+    }
+
+    public void EliminarEpleado(String UID){
+
     }
 }
