@@ -20,5 +20,9 @@ public class Login extends ComponentActivity {
         startActivity(new Intent(this, Register.class));
     }
 
+    public void LoginUser(){
+
+    }
+
 
 }

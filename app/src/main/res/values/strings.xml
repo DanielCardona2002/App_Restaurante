@@ -19,4 +19,5 @@
     <string name="gestionar_reservacion">Gestionar reservacion</string>
     <string name="gestionar_pedidos">Gestionar Pedidos</string>
     <string name="title_activity_home">Menú</string>
+    <string name="Correo">Correo Electrónico</string>
 </resources>
