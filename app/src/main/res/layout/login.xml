@@ -22,21 +22,23 @@
         android:layout_height="150dp"/>
 
     <EditText
+        android:id="@+id/lUsuario"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="@string/usuario"
+        android:hint="@string/Correo"
         android:inputType="text"
         android:singleLine="true"
         android:gravity="center"
         android:textSize="20sp"
-        android:autofillHints="Usuario"/>
+        android:autofillHints="Correo Electrónico"/>
 
  <Space
      android:layout_width="match_parent"
      android:layout_height="40dp"/>
 
     <EditText
+        android:id="@+id/lContrasena"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

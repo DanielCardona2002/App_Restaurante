@@ -26,23 +26,23 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends ComponentActivity {
 
-    public EditText txtNombres= null;
-    public EditText txtApellidos= null;
-    public EditText txtUsuario= null;
-    public EditText txtClave= null;
-    public EditText txtClave2= null;
+    private EditText txtNombres= null;
+    private EditText txtApellidos= null;
+    private EditText txtUsuario= null;
+    private EditText txtClave= null;
+    private EditText txtClave2= null;
 
-    public FirebaseDatabase database =  null;
-    public FirebaseAuth auth = null;
-    public DatabaseReference databaseReference =null;
+    private FirebaseDatabase database =  null;
+    private FirebaseAuth auth = null;
+    private DatabaseReference databaseReference =null;
 
-    public FirebaseUser user =null;
+    private FirebaseUser user =null;
 
-    public String tNombres = null;
-    public String tApellidos= null;
-    public String tUsuario =null;
-    public String tClave =null;
-    public String tClave2 =null;
+    private String tNombres = null;
+    private String tApellidos= null;
+    private String tUsuario =null;
+    private String tClave =null;
+    private String tClave2 =null;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +90,7 @@ public class Register extends ComponentActivity {
                                                     currentuserDB.child("Apellidos").setValue(tApellidos);
                                                     Toast.makeText(Register.this, "Registro Completo", Toast.LENGTH_LONG).show();
                                                     startActivity(new Intent(Register.this, Home.class));
+                                                    finish();
                                                 }
                                             }
                                         }).addOnFailureListener(new OnFailureListener() {
