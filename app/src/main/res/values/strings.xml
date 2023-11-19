@@ -28,4 +28,5 @@
     <string name="editar">Editar</string>
     <string name="eliminar">Eliminar</string>
     <string name="no_funcion">No Funcionó</string>
+    <string name="empleado">Empleado</string>
 </resources>

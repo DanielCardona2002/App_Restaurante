@@ -89,7 +89,7 @@ public class Register extends ComponentActivity {
                                                     currentuserDB.child("Nombre").setValue(tNombres);
                                                     currentuserDB.child("Apellidos").setValue(tApellidos);
                                                     Toast.makeText(Register.this, "Registro Completo", Toast.LENGTH_LONG).show();
-                                                    startActivity(new Intent(Register.this, Home.class));
+                                                    startActivity(new Intent(Register.this, Home.class).putExtra("UserID", user.getUid()));
                                                     finish();
                                                 }
                                             }

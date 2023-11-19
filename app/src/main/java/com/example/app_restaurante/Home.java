@@ -47,7 +47,7 @@ public class Home extends ComponentActivity {
                         String nombre = snapshot.child("Nombre").getValue().toString();
                         String apellido = snapshot.child("Apellidos").getValue().toString();
 
-                        Logged.setText(nombre+" "+apellido);
+                        Logged.setText(String.format("%s %s", nombre, apellido));
                     }
                 }
 
@@ -62,7 +62,9 @@ public class Home extends ComponentActivity {
     }
 
     public void Gestion_Empleados(View view) {
-        startActivity(new Intent(this, Gestion_Empleados.class));
+        Intent in  = new Intent(this, Gestion_Empleados.class);
+        in.putExtra("UserID", UserID);
+        startActivity(in);
     }
 
     public void Gestion_Inventario(View view){
