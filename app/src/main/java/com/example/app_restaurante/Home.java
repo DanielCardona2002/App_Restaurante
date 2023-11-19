@@ -46,9 +46,9 @@ public class Home extends ComponentActivity {
                        registro = task.getResult().getValue();
                        String Name =null;
 
-                        for(DataSnapshot child: task.getResult().getChildren()){
+                     /*   for(DataSnapshot child: task.getResult().getChildren()){
                             Name = Name + " " + child.get;
-                        }
+                        } */
 
                        Logged.setText(Name);
 
